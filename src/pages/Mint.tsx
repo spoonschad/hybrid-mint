@@ -1,7 +1,7 @@
 import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import { useParams } from 'react-router';
 
-import ConnectButton from '../components/ConnectButton';
+import {ConnectButton} from '../components/ConnectButton';
 import { MintCard } from '../components/MintCard';
 const Mint: React.FC = () => {
 

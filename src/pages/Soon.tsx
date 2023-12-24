@@ -1,9 +1,6 @@
 import { IonButton, IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import { useParams } from 'react-router';
-import { useAccount, useBalance, useConnect } from 'wagmi';
-
-import { InjectedConnector } from 'wagmi/connectors/injected';
-import ConnectButton from '../components/ConnectButton';
+import {ConnectButton} from '../components/ConnectButton';
 
 const Soon: React.FC = () => {
 

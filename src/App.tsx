@@ -2,7 +2,7 @@ import { IonApp, IonRouterOutlet, IonSplitPane, setupIonicReact } from '@ionic/r
 import { IonReactHashRouter, IonReactRouter } from '@ionic/react-router';
 import { Redirect, Route } from 'react-router-dom';
 import Menu from './components/Menu';
-
+import '@solana/wallet-adapter-react-ui/styles.css';
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
 
@@ -21,42 +21,59 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
-import { WagmiConfig, configureChains, createConfig } from 'wagmi';
-import { mainnet } from 'viem/chains';
-import { jsonRpcProvider } from 'wagmi/providers/jsonRpc'
-import { InjectedConnector } from 'wagmi/connectors/injected';
-import { publicProvider } from 'wagmi/providers/public';
 import Home from './pages/Home';
 import Mint from './pages/Mint';
 import Soon from './pages/Soon';
+import { ConnectionProvider, WalletProvider } from '@solana/wallet-adapter-react';
+import { WalletModalProvider } from '@solana/wallet-adapter-react-ui';
+import Adapter from '@solana/wallet-adapter-base-ui';
+import { WalletAdapterNetwork } from '@solana/wallet-adapter-base';
+import { UnsafeBurnerWalletAdapter } from '@solana/wallet-adapter-wallets';
+import { useMemo } from 'react';
+import { clusterApiUrl } from '@solana/web3.js';
 
-
+import {PhantomWalletAdapter} from '@solana/wallet-adapter-wallets'
 setupIonicReact();
-const { chains, publicClient } = configureChains(
-  [mainnet],
-  [publicProvider()],
-)
-const config = createConfig({
-  autoConnect: true,
-  publicClient,
-  connectors: [new InjectedConnector({ chains })],
-})
 const App: React.FC = () => {
+  const network = WalletAdapterNetwork.Mainnet;
+
+  // You can also provide a custom RPC endpoint.
+  // const endpoint = 'https://holy-icy-tent.solana-mainnet.quiknode.pro/';
+  const endpoint = useMemo(() => clusterApiUrl(network), [network]);
+
+
+  const wallets = useMemo(
+    () => [
+        /**
+         * Wallets that implement either of these standards will be available automatically.
+         *
+         *   - Solana Mobile Stack Mobile Wallet Adapter Protocol
+         *     (https://github.com/solana-mobile/mobile-wallet-adapter)
+         *   - Solana Wallet Standard
+         *     (https://github.com/solana-labs/wallet-standard)
+         *
+         * If you wish to support a wallet that supports neither of those standards,
+         * instantiate its legacy wallet adapter here. Common legacy adapters can be found
+         * in the npm package `@solana/wallet-adapter-wallets`.
+         */
+    ],
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [network]
+);
+
   return (
     <IonApp>
-      <WagmiConfig config={config}>
-        <IonReactHashRouter>
-          <Route path="/" exact={true}>
-            <Home />
-          </Route>
-          <Route path="/mint" exact={true}>
-            <Mint />
-          </Route>
-          <Route path="/soon" exact={true}>
-            <Soon />
-          </Route>
-        </IonReactHashRouter>
-      </WagmiConfig>
+        <ConnectionProvider config={{wsEndpoint:"wss://holy-icy-tent.solana-mainnet.quiknode.pro/"}} endpoint={endpoint} >
+          <WalletProvider autoConnect wallets={[]}>
+            <WalletModalProvider >
+              <IonReactRouter>
+                <Route path="*" >
+                  <Home />
+                </Route>
+              </IonReactRouter>
+            </WalletModalProvider>
+          </WalletProvider>
+        </ConnectionProvider>
 
     </IonApp>
   );
