@@ -1,0 +1,8 @@
+{
+  "name": "run-the-minter",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite",
+  "id": "478600b5"
+}
