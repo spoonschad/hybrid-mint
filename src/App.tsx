@@ -33,13 +33,15 @@ import { useMemo } from 'react';
 import { clusterApiUrl } from '@solana/web3.js';
 
 import {PhantomWalletAdapter} from '@solana/wallet-adapter-wallets'
+import Bonds from './pages/Bonds';
+import Bridge from './pages/Bridge';
 setupIonicReact();
 const App: React.FC = () => {
   const network = WalletAdapterNetwork.Mainnet;
 
   // You can also provide a custom RPC endpoint.
-  // const endpoint = 'https://holy-icy-tent.solana-mainnet.quiknode.pro/';
-  const endpoint = useMemo(() => clusterApiUrl(network), [network]);
+  const endpoint = 'https://holy-icy-tent.solana-mainnet.quiknode.pro/';
+  // const endpoint = useMemo(() => clusterApiUrl(network), [network]);
 
 
   const wallets = useMemo(
@@ -64,11 +66,17 @@ const App: React.FC = () => {
   return (
     <IonApp>
         <ConnectionProvider config={{wsEndpoint:"wss://holy-icy-tent.solana-mainnet.quiknode.pro/"}} endpoint={endpoint} >
-          <WalletProvider autoConnect wallets={[]}>
-            <WalletModalProvider >
+          <WalletProvider autoConnect wallets={[]} >
+            <WalletModalProvider  >
               <IonReactRouter>
-                <Route path="*" >
+              <Route path="/" >
                   <Home />
+                </Route>
+                <Route path="/bonds" >
+                  <Bonds />
+                </Route>
+                <Route path="/bridge" >
+                  <Bridge />
                 </Route>
               </IonReactRouter>
             </WalletModalProvider>
