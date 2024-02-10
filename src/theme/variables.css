@@ -105,8 +105,10 @@ ion-toolbar,
 ion-header {
   --border-width: 0 !important;
 }
-.wallet-adapter-button{
-  background: 'clear';
-  color:'green'
+.wallet-adapter-button-trigger{
+  font-family:     'MEK-Mono'!important;  ;
+  background-color: rgba(red, green, blue, 0)!important;
+  background:'clear';
+  background-color: transparent!important;
 }
 

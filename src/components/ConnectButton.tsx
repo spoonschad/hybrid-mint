@@ -1,8 +1,8 @@
-import { IonButton, IonItem, IonPopover } from '@ionic/react';
-import { useConnection, useWallet } from '@solana/wallet-adapter-react';
-import { WalletMultiButton, useWalletModal } from '@solana/wallet-adapter-react-ui';
-import { useState } from 'react';
+import { WalletDisconnectButton, WalletMultiButton } from '@solana/wallet-adapter-react-ui';
+import { home } from 'ionicons/icons';
 
 export const ConnectButton:React.FC=()=> {
-return <WalletMultiButton style={{color:'white'}}/>
+
+
+return <><WalletMultiButton /></>
 }
