@@ -2,18 +2,14 @@
 http://ionicframework.com/docs/theming/ */
 @font-face {
   font-family:
-    'MEK-Mono';
-  src: url(/MEK-Mono.otf);
+    'Roboto-Mono';
+  src: url(/RobotoMono-VariableFont_wght.ttf);
 }
 
 * {
-  font-family:     'MEK-Mono';  ;
+  font-family:     'Roboto-Mono';  ;
 }
 
-.roboto {
-  font-family: 'Roboto Mono', monospace !important;
-  font-size: large;
-}
 
 
 /** Ionic CSS Variables **/
@@ -67,7 +63,7 @@ http://ionicframework.com/docs/theming/ */
   --ion-color-danger-tint: #ed576b;
 
   /** dark **/
-  --ion-color-dark: black;
+  --ion-color-dark: #2cec00;
   --ion-color-dark-rgb: 34, 36, 40;
   --ion-color-dark-contrast: #ffffff;
   --ion-color-dark-contrast-rgb: 255, 255, 255;
@@ -98,7 +94,7 @@ html {
   --ion-dynamic-font: var(--ion-default-dynamic-font);
 }
 body {
---ion-background-color: #ffffff;
+--ion-background-color: #2cec00;
 }
 
 ion-toolbar,
@@ -112,3 +108,112 @@ ion-header {
   background-color: transparent!important;
 }
 
+.image-33 {
+  width: 14px;
+  height: 14px;
+}
+
+.link-7 {
+  color: #fff;
+  margin-left: 7px;
+  font-family: Roboto Mono, sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 12px;
+  text-decoration: none;
+}
+
+.link-7 {
+  font-size: 9px;
+}
+.div-block-80 {
+  width: 100vw;
+  height: 2vh;
+  z-index: 999;
+  background-color: #068500;
+  align-items: center;
+  padding-left: 11px;
+  font-family: Basel Grotesk, sans-serif;
+  display: flex;
+  position: absolute;
+  top: 0%;
+  bottom: auto;
+  left: 0%;
+  right: 0%;
+}
+.div-block-83 {
+  height: 5vh;
+  z-index: 999;
+
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2vh;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  position: absolute;
+  top: 0%;
+  bottom: auto;
+  left: 0%;
+  right: 0%;
+}
+.image-34 {
+  z-index: 999;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.link-8 {
+  z-index: 999;
+
+  color: #fff;
+  margin-left: 32px;
+  font-family: Basel Grotesk, sans-serif;
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+#jupiter-terminal .bg-\[\#212128\] {
+  --tw-bg-opacity: 1;
+  background-color: #5cff2e !important; /* Set background color to white */
+}
+
+.input { 
+  border-width: 0px !important;
+} 
+#jupiter-terminal .text-white {
+  --tw-text-opacity: 1;
+  color: white !important; /* Set text color to black */
+}
+.flex.items-center.justify-center.w-full.h-full {
+  background-color: #29d800 !important;
+padding: 12px !important;
+border-radius: 24px !important; 
+border: 4px solid #2cec00 !important
+}
+#jupiter-terminal .bg-\[\#191B1F\] {
+  --tw-bg-opacity: 1;
+  background-color: #29d800 !important;
+}
+#jupiter-terminal .text-white\/30 {
+  color: #FFFFFF !important;
+}
+#jupiter-terminal .text-white\/50 {
+  color: #FFFFFF !important;
+}  
+#jupiter-terminal input::placeholder, #jupiter-terminal textarea::placeholder {
+  color: #FFFFFF !important;
+}
+#jupiter-terminal .bg-\[\#36373E\] {
+  background-color:  #2cec00 !important;
+  }
+  #jupiter-terminal .bg-jupiter-bg {
+    --tw-bg-opacity: 1;
+    background-color: #2cec00 !important;
+}
+#jupiter-terminal .bg-\[\#2C2D33\] {
+  --tw-bg-opacity: 1;
+  background-color: #2dd100 !important;
+}
+#jupiter-terminal img {
+  display: none !important;
+}

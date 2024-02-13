@@ -72,7 +72,7 @@ useEffect(() => {
   }, [publicKey]); // 
 
     return (
-      <IonPage color="primary">
+      <IonPage color="#2cec00">
         <Menu />
         <IonContent fullscreen color="dark" className="ion-text-center">
         <IonItem color='dark'>

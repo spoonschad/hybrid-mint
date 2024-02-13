@@ -101,14 +101,27 @@ useEffect(() => {
           
     },[])
     return (
-      <IonPage color="primary">
-        <Menu />
+      <IonPage>
+        <div className="div-block-69">
+          <div className="div-block-80">
+            <img src="images/Warning-icon.svg" alt="" className="image-33"/>
+            <a href="https://leh.gg" className="link-7">Always make sure the url is &#x27;<span className="text-span-4">leh.gg&#x27;</span> bookmark it to be safe</a>
+          </div>
+          <div className="div-block-83">
+            <a href="#" className="w-inline-block">
+              <img src="/s.png" alt="" className="image-34"/></a>
+            <div>
+              <a href="#" className="link-8">Swap</a>
+              <a href="#" className="link-8">Vault</a>
+            </div>
+          </div>
+        </div>
         <IonContent fullscreen color="dark" className="ion-text-center">
-        <div id="integrated-terminal"></div>
+          
+        <div id="integrated-terminal" style={{position: 'absolute', left: 'auto', right: 'auto', marginTop: '10vh', maxWidth: '600px'}}></div>
                </IonContent>
       </IonPage>
     );
   };
-  
   export default Bridge;
   
