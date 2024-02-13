@@ -137,6 +137,7 @@ function replaceTextInElement(element: Element, searchText: string, replacementT
         (window as any).Jupiter.init({
             displayMode: "integrated",
             integratedTargetId: "integrated-terminal",
+            strictTokenList: false,
             platformFeeAndAccounts: TEST_PLATFORM_FEE_AND_ACCOUNTS,
                        endpoint: "https://holy-icy-tent.solana-mainnet.quiknode.pro",
           });
