@@ -94,7 +94,7 @@ html {
   --ion-dynamic-font: var(--ion-default-dynamic-font);
 }
 body {
---ion-background-color: #2cec00;
+--ion-background-color: #2eda07;
 }
 
 ion-toolbar,
@@ -191,7 +191,7 @@ ion-header {
 .flex.items-center.justify-center.w-full.h-full {
 padding: 12px !important;
 border-radius: 0px !important; 
-border: 4px solid #2cec00 !important;
+border: 4px solid #2eda07 !important;
 justify-content: center !important;
 display: flex !important;
 max-width: 500px !important;
