@@ -197,7 +197,7 @@ window.addEventListener('pageshow', setupObserver);
               <a href="https:/x.com/lehvault" className="w-inline-block" style={{color: 'white', textDecoration: 'none', fontWeight: 'medium', marginLeft: 24}}> 
               Twitter</a>
             </div>
-         <div style={{display: 'flex', justifyContent: 'center', width: '100%',marginTop: 12 }}><a href="https://solscan.io/account/6F8fGQXso34nhubZtEZv8oUSoJgu3Wxu2o5nbSYcr3kF" style={{color: 'white', textDecoration: 'none', fontWeight: 'bold', fontSize: '.875rem'}}>LEH Treasury</a>
+         <div style={{display: 'flex', justifyContent: 'center', width: '100%',marginTop: 12 }}><a href="https://solscan.io/account/HdHj4J6c6Q6j3ukfRa1nrtsAZCcekFXRZmLt9pWivf66" style={{color: 'white', textDecoration: 'none', fontWeight: 'bold', fontSize: '.875rem'}}>LEH Treasury</a>
          </div>
          <div> 
          </div>
