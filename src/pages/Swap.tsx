@@ -107,7 +107,7 @@ useEffect(() => {
       <IonPage>
         <div className="div-block-69">
           <div className="div-block-80">
-            <img src="images/Warning-icon.svg" alt="" className="image-33"/>
+            <img src="images/warning.svg" alt="" className="image-33"/>
             <a href="https://leh.gg" className="link-7">Always make sure the url is &#x27;<span className="text-span-4">leh.gg&#x27;</span> bookmark it to be safe</a>
           </div>
           <div className="div-block-83">
