@@ -188,7 +188,7 @@ window.addEventListener('pageshow', setupObserver);
   height: '100%' // Ensure it fills the parent height, might need adjusting
 }}> 
 
-        <div id="integrated-terminal" style={{width: '100%', marginTop: '10vh', maxWidth: '100%', padding: '2%', paddingBottom: '24px'}}>
+        <div id="integrated-terminal" style={{width: '100%', marginTop: '15vh', maxWidth: '100%', padding: '2%', paddingBottom: '24px'}}>
 
          </div>
          <div style={{display: 'flex', justifyContent: 'center', width: '100%',marginTop: 0 }}>
