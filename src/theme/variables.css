@@ -172,7 +172,7 @@ ion-header {
 }
 #jupiter-terminal .bg-\[\#212128\] {
   --tw-bg-opacity: 1;
-  background-color: #00000020 !important; /* Set background color to white */
+  background-color: #28d800 !important; /* Set background color to white */
 }
 
 .input { 
@@ -182,10 +182,17 @@ ion-header {
   --tw-text-opacity: 1;
   color: white !important; /* Set text color to black */
 }
+.w-full.h-full {
+  justify-content: center !important;
+  display: flex !important;
+}
 .flex.items-center.justify-center.w-full.h-full {
 padding: 12px !important;
 border-radius: 0px !important; 
-border: 4px solid #2cec00 !important
+max-width: 500px !important;
+border: 4px solid #2cec00 !important;
+justify-content: center !important;
+display: flex !important;
 }
 #jupiter-terminal .bg-\[\#191B1F\] {
   --tw-bg-opacity: 1;
@@ -225,12 +232,12 @@ border: 4px solid #2cec00 !important
 }
 
 #jupiter-terminal .rounded-xl {
-  border-radius: 24px !important; 
+  border-radius: 18px !important; 
 
 }
 
 #jupiter-terminal .border {
-  border: 1px solid rgb(44, 236, 0) !important; 
+  border: 1px solid rgb(59, 215, 24) !important; 
 
 }
 
@@ -241,4 +248,47 @@ border: 4px solid #2cec00 !important
 
 #jupiter-terminal .text-transparent{
   color: white !important;
+}
+
+.css-1vx73dy {
+  margin: 0px !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+
+}
+
+.css-1pt1vl2 {
+  background-color: rgb(45, 209, 0) !important;
+  border-radius: 24px !important;
+}
+
+#jupiter-terminal .bg-\[\#292A33\] {
+  background-color: rgb(29, 133, 0) !important;
+  border-radius: 24px !important;
+
+}
+
+
+#jupiter-terminal .bg-black\/50 {
+  border-radius: 24px !important;
+}
+
+#jupiter-terminal .bg-\[\#1B1B1E\] {
+ background-color: #28d800 !important;
+}
+
+#jupiter-terminal .bg-transparent :before {
+  background-color: #28d800
+  !important;
+}
+
+#jupiter-terminal .v2-border-gradient:before {
+  border: 3px solid  #1dff12;
+  border-radius: 18px !important;
+  background: linear-gradient(91.26deg, #28d800 15.73% ,#28d800 83.27%) !important;
+}
+
+.h-full.w-full.leading-none.flex.justify-center.items-center {
+  border: none !important;
 }

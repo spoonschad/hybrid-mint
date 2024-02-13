@@ -107,8 +107,8 @@ useEffect(() => {
       <IonPage>
         <div className="div-block-69">
           <div className="div-block-80">
-            <img src="images/warning.svg" alt="" className="image-33"/>
-            <a href="https://leh.gg" className="link-7">Always make sure the url is &#x27;<span className="text-span-4">leh.gg&#x27;</span> bookmark it to be safe</a>
+            <img src="warning.svg" alt="" className="image-33"/>
+            <a href="https://leh.gg" className="link-7">Always make sure the url is &#x27;<span className="text-span-4" style={{color: 'white', fontWeight: 'bold'}}>leh.gg&#x27;</span> bookmark it to be safe</a>
           </div>
           <div className="div-block-83">
             <a href="#" className="w-inline-block">
@@ -126,8 +126,12 @@ useEffect(() => {
   flexDirection: 'column', // Stacks children vertically. Change to 'row' if you prefer a horizontal layout
   height: '100%' // Ensure it fills the parent height, might need adjusting
 }}> 
-        <div id="integrated-terminal" style={{marginTop: '10vh', maxWidth: '100%', padding: '12.5%'}}></div>
-              </IonContent> 
+
+        <div id="integrated-terminal" style={{width: '100%', marginTop: '10vh', maxWidth: '100%', padding: '2%', paddingBottom: '24px'}}>
+
+         </div>
+         <div style={{display: 'flex', justifyContent: 'center', width: '100%',marginTop: 0 }}><a href="https://solscan.io/account/6F8fGQXso34nhubZtEZv8oUSoJgu3Wxu2o5nbSYcr3kF" style={{color: 'white', textDecoration: 'none', fontWeight: 'bold'}}> Treasury</a></div>
+        </IonContent> 
       </IonPage>
     );
   };
