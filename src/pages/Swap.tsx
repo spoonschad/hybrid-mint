@@ -1,10 +1,13 @@
 import {
     IonButton,
+    IonCol,
     IonContent,
     IonFooter,
+    IonGrid,
     IonInput,
     IonLabel,
     IonPage,
+    IonRow,
     IonSegment,
     IonSegmentButton,
     IonText,
@@ -117,8 +120,14 @@ useEffect(() => {
           </div>
         </div>
         <IonContent fullscreen color="dark" className="ion-text-center">
-          
-        <div id="integrated-terminal" style={{position: 'absolute', left: 'auto', right: 'auto', marginTop: '10vh', maxWidth: '600px'}}></div>
+
+<IonGrid>
+    <IonRow>
+        <IonCol offsetMd="3" sizeMd="6"  offsetSm="2" sizeSm="8" sizeXs="12">
+        <div id="integrated-terminal" style={{ marginTop: '10vh', width:'100%'}}></div>
+        </IonCol>
+    </IonRow>
+        </IonGrid>          
                </IonContent>
       </IonPage>
     );
