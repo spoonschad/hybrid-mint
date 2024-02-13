@@ -114,7 +114,31 @@ function replaceTextInElement(element: Element, searchText: string, replacementT
       }
   });
 }
+// Wrap the observer setup in a function to be called on both DOMContentLoaded and pageshow
+function setupObserver() {
+  // Create an observer instance linked to the callback function
+  var observer = new MutationObserver(callback);
 
+  // Start observing the target node for configured mutations
+  observer.observe(document.body, { childList: true, subtree: true });
+}
+
+// Callback function as before
+var callback = function(mutationsList: any, observer: { disconnect: () => void; }) {
+  for(var mutation of mutationsList) {
+      if (mutation.type === 'childList') {
+          var targetDivs = document.querySelectorAll('#jupiter-terminal .mt-2.h-7.pl-3.pr-2');
+          if(targetDivs.length > 0) {
+              targetDivs.forEach(function(div) {
+                  replaceTextInElement(div, 'Jupiter', 'Swap');
+              });
+              observer.disconnect(); // Consider whether you really want to disconnect here
+          }
+      }
+  }
+};
+document.addEventListener('DOMContentLoaded', setupObserver);
+window.addEventListener('pageshow', setupObserver);
     const handleBridgeNFTToToken = async () => {
       // Implement NFT to token bridging logic
       setStatus('loading');
