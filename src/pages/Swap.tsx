@@ -168,9 +168,9 @@ function replaceTextInElement(element: Element, searchText: string, replacementT
 
          </div>
          <div style={{display: 'flex', justifyContent: 'center', width: '100%',marginTop: 0 }}>
-            <a href="t.me/lehmanbroscoin" className="w-inline-block" style={{color: 'white', textDecoration: 'none', fontWeight: 'bold'}}> 
+            <a href="t.me/lehmanbroscoin" className="w-inline-block" style={{color: 'white', textDecoration: 'none', fontWeight: 'medium'}}> 
               Telegram</a>
-              <a href="x.com/lehvault" className="w-inline-block" style={{color: 'white', textDecoration: 'none', fontWeight: 'bold', marginLeft: 24}}> 
+              <a href="x.com/lehvault" className="w-inline-block" style={{color: 'white', textDecoration: 'none', fontWeight: 'medium', marginLeft: 24}}> 
               Twitter</a>
             </div>
          <div style={{display: 'flex', justifyContent: 'center', width: '100%',marginTop: 12 }}><a href="https://solscan.io/account/6F8fGQXso34nhubZtEZv8oUSoJgu3Wxu2o5nbSYcr3kF" style={{color: 'white', textDecoration: 'none', fontWeight: 'bold', fontSize: '.875rem'}}>LEH Treasury</a>
