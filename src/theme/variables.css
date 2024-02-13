@@ -142,12 +142,10 @@ ion-header {
 }
 .div-block-83 {
   height: 5vh;
-  margin-top: 2vh;
   z-index: 999;
-
   justify-content: center;
   align-items: center;
-  margin-top: 4vh;
+  margin-top:  3rem;
   padding-left: 1rem;
   padding-right: 1rem;
   display: flex;
