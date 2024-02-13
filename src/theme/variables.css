@@ -131,6 +131,7 @@ ion-header {
   z-index: 999;
   background-color: #068500;
   align-items: center;
+  justify-content: center;
   padding-left: 11px;
   display: flex;
   position: absolute;
@@ -144,7 +145,7 @@ ion-header {
   margin-top: 2vh;
   z-index: 999;
 
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin-top: 2vh;
   padding-left: 1rem;
