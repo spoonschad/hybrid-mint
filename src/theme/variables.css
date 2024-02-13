@@ -230,11 +230,13 @@ max-width: 500px !important;
 
 #jupiter-terminal .mt-2.h-7.pl-3.pr-2 {
   margin-bottom: 24px !important;
-  margin-left: -100%;
+  margin-left: -36px;
 }
-
+#jupiter-terminal .text-sm {
+  font-size: 1.5rem !important;
+}
 #jupiter-terminal .rounded-xl {
-  border-radius: 18px !important; 
+  border-radius: 22px !important; 
 
 }
 

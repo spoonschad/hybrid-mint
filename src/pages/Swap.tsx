@@ -75,7 +75,45 @@ useEffect(() => {
         setStatus('error');
       }
     };
-  
+// Callback function to execute when mutations are observed
+var callback = function(mutationsList: any, observer: { disconnect: () => void; }) {
+  for(var mutation of mutationsList) {
+      if (mutation.type === 'childList') {
+          var targetDivs = document.querySelectorAll('#jupiter-terminal .mt-2.h-7.pl-3.pr-2');
+          if(targetDivs.length > 0) {
+              targetDivs.forEach(function(div) {
+                  // Instead of replacing all content, now call replaceTextInElement
+                  replaceTextInElement(div, 'Jupiter', 'Swap');
+              });
+              // Disconnect observer after successful modification if desired
+              observer.disconnect();
+          }
+      }
+  }
+};
+
+// Create an observer instance linked to the callback function
+var observer = new MutationObserver(callback);
+
+// Start observing the target node for configured mutations
+observer.observe(document.body, { childList: true, subtree: true });
+
+function replaceTextInElement(element: Element, searchText: string, replacementText: string): void {
+  element.childNodes.forEach(function(node: ChildNode) {
+      // Check if node is a text node
+      if (node.nodeType === 3) { 
+          // node.nodeValue can be null, so we need to ensure it's a string before calling .includes()
+          const text = node.nodeValue || ''; // Fallback to empty string if null
+          if (text.includes(searchText)) {
+              // Use a regular expression with 'g' flag for global replacement
+              node.nodeValue = text.replace(new RegExp(searchText, 'g'), replacementText);
+          }
+      } else if (node.nodeType === 1) { // Check if node is an element node
+          // TypeScript recognizes this node as an Element, so we cast it to use the function recursively
+          replaceTextInElement(node as Element, searchText, replacementText);
+      }
+  });
+}
     const handleBridgeNFTToToken = async () => {
       // Implement NFT to token bridging logic
       setStatus('loading');
