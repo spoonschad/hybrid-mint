@@ -1,10 +1,13 @@
 import {
     IonButton,
+    IonCol,
     IonContent,
     IonFooter,
+    IonGrid,
     IonInput,
     IonLabel,
     IonPage,
+    IonRow,
     IonSegment,
     IonSegmentButton,
     IonText,
