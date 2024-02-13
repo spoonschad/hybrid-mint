@@ -116,10 +116,15 @@ useEffect(() => {
             </div>
           </div>
         </div>
-        <IonContent fullscreen color="dark" className="ion-text-center">
-          
-        <div id="integrated-terminal" style={{position: 'absolute', left: 'auto', right: 'auto', marginTop: '10vh', maxWidth: '600px'}}></div>
-               </IonContent>
+        <IonContent style={{
+  display: 'flex',
+  justifyContent: 'center', // Centers children along the main axis (horizontally for row, vertically for column)
+  alignItems: 'center', // Centers children along the cross axis (vertically for row, horizontally for column)
+  flexDirection: 'column', // Stacks children vertically. Change to 'row' if you prefer a horizontal layout
+  height: '100%' // Ensure it fills the parent height, might need adjusting
+}}> 
+        <div id="integrated-terminal" style={{marginTop: '10vh', maxWidth: '100%', padding: '12.5%'}}></div>
+              </IonContent> 
       </IonPage>
     );
   };
