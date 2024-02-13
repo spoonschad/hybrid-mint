@@ -172,7 +172,7 @@ window.addEventListener('pageshow', setupObserver);
         <div className="div-block-69">
           <div className="div-block-80">
             <img src="warning.svg" alt="" className="image-33"/>
-            <a href="https://leh.gg" className="link-7" style={{fontSize: '11px'}}>Always make sure the url is &#x27;<span className="text-span-4" style={{color: 'white', fontWeight: 'bold'}}>leh.gg&#x27;</span> bookmark it to be safe</a>
+            <a href="https://leh.gg" className="link-7" style={{fontSize: '10px'}}>Always make sure the url is &#x27;<span className="text-span-4" style={{color: 'white', fontWeight: 'bold'}}>leh.gg&#x27;</span> bookmark it to be safe</a>
           </div>
           <div className="div-block-83">
             <a href="" className="w-inline-block" style={{textDecoration: 'none', display: 'flex', alignItems: 'center'}}>

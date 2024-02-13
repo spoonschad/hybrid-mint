@@ -127,7 +127,7 @@ ion-header {
 }
 .div-block-80 {
   width: 100vw;
-  height: 2vh;
+  height: 24px;
   z-index: 999;
   background-color: #068500;
   align-items: center;
