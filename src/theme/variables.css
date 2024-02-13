@@ -141,6 +141,7 @@ ion-header {
 }
 .div-block-83 {
   height: 5vh;
+  margin-top: 2vh;
   z-index: 999;
 
   justify-content: space-between;
@@ -229,6 +230,7 @@ max-width: 500px !important;
 
 #jupiter-terminal .mt-2.h-7.pl-3.pr-2 {
   margin-bottom: 24px !important;
+  margin-left: -100%;
 }
 
 #jupiter-terminal .rounded-xl {

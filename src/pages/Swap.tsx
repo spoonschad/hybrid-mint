@@ -114,8 +114,6 @@ useEffect(() => {
             <a href="#" className="w-inline-block">
               <img src="/s.png" alt="" className="image-34"/></a>
             <div>
-              <a href="#" className="link-8">Swap</a>
-              <a href="#" className="link-8">Vault</a>
             </div>
           </div>
         </div>
