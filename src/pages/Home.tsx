@@ -26,11 +26,12 @@ import Menu from "../components/Menu";
 
 const Home: React.FC = () => {
   const [show, setShow] = useState<boolean>(false);
+
   return (
     <IonPage color="primary">
 
     <Menu/>
-      <IonContent fullscreen color="tertiary" className="ion-text-center">
+      <IonContent fullscreen color="dark" className="ion-text-center">
         <IonText className="ion-text-center">
           {/* <IonButton
             onClick={() => {
@@ -60,11 +61,6 @@ const Home: React.FC = () => {
           </IonButton> */}
         </IonText>
       </IonContent>
-      <IonFooter>
-        <IonToolbar color="tertiary">
-          <IonTitle></IonTitle>
-        </IonToolbar>
-      </IonFooter>
     </IonPage>
   );
 };

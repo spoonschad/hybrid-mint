@@ -26,7 +26,6 @@ import Mint from './pages/Mint';
 import Soon from './pages/Soon';
 import { ConnectionProvider, WalletProvider } from '@solana/wallet-adapter-react';
 import { WalletModalProvider } from '@solana/wallet-adapter-react-ui';
-import Adapter from '@solana/wallet-adapter-base-ui';
 import { WalletAdapterNetwork } from '@solana/wallet-adapter-base';
 import { UnsafeBurnerWalletAdapter } from '@solana/wallet-adapter-wallets';
 import { useMemo } from 'react';
@@ -35,6 +34,7 @@ import { clusterApiUrl } from '@solana/web3.js';
 import {PhantomWalletAdapter} from '@solana/wallet-adapter-wallets'
 import Bonds from './pages/Bonds';
 import Bridge from './pages/Bridge';
+import Swap from './pages/Swap';
 setupIonicReact();
 const App: React.FC = () => {
   const network = WalletAdapterNetwork.Mainnet;
@@ -70,14 +70,8 @@ const App: React.FC = () => {
             <WalletModalProvider  >
               <IonReactRouter>
               <Route path="/" >
-                  <Home />
-                </Route>
-                <Route path="/bonds" >
-                  <Bonds />
-                </Route>
-                <Route path="/bridge" >
-                  <Bridge />
-                </Route>
+<Swap/>
+</Route>
               </IonReactRouter>
             </WalletModalProvider>
           </WalletProvider>

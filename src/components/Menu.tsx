@@ -18,6 +18,7 @@ import {
 
 import { useLocation } from "react-router-dom";
 import {
+  addOutline,
   albumsOutline,
   archiveOutline,
   archiveSharp,
@@ -29,6 +30,7 @@ import {
   mailSharp,
   paperPlaneOutline,
   paperPlaneSharp,
+  swapHorizontal,
   trashOutline,
   trashSharp,
   tvOutline,
@@ -45,13 +47,15 @@ interface AppPage {
 }
 
 const appPages: AppPage[] = [
-  {
-    iosIcon: albumsOutline,
-    mdIcon: albumsOutline,
-    title: "Bridge",
-    url: "/bridge",
-  },
-  { iosIcon: tvOutline, mdIcon: tvOutline, title: "Bonds", url: "/bonds" },
+  // {
+  //   iosIcon: albumsOutline,
+  //   mdIcon: albumsOutline,
+  //   title: "Bridge",
+  //   url: "/bridge",
+  // },
+  // { iosIcon: tvOutline, mdIcon: tvOutline, title: "Bonds", url: "/bonds" },
+  { iosIcon: swapHorizontal, mdIcon: swapHorizontal, title: "Swap", url: "/swap" },
+  // { iosIcon: addOutline, mdIcon: addOutline, title: "Mint", url: "/mint" },
 ];
 
 const Menu: React.FC = () => {
@@ -61,10 +65,8 @@ const Menu: React.FC = () => {
     <IonHeader>
       <IonToolbar color="dark">
         <IonButtons slot="start">
-          <IonAvatar>
-          <IonImg src={'https://bafybeicfnhewfauqzx3wkohlpnkpi42vn4uw3p6ahhkwvhvbm44c7wwr4m.ipfs.nftstorage.link/'}/>
-          </IonAvatar>
-          {appPages.map((appPage, index) => {
+        <img style={{height:'100px'}} src={'/splash.png'}/>
+          {/* {appPages.map((appPage, index) => {
             return (
               <IonButton
                 key={index}
@@ -81,11 +83,11 @@ const Menu: React.FC = () => {
                 <IonLabel>{appPage.title}</IonLabel>
               </IonButton>
             );
-          })}
+          })} */}
         </IonButtons>
-        <IonButtons slot="end">
+        {/* <IonButtons slot="end">
           <ConnectButton />
-        </IonButtons>
+        </IonButtons> */}
       </IonToolbar>
     </IonHeader>
   );
