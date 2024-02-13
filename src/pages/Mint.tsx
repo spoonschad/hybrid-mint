@@ -17,7 +17,7 @@ import {
   import { useEffect, useState } from "react";
   import Menu from "../components/Menu";
 import { PublicKey, TokenAccountsFilter, } from "@solana/web3.js";
-import { accounts, mintAccounts, progams, spl_tokens } from "../config";
+import {  mintAccounts, progams, spl_tokens } from "../config";
 import { Deployment, libreplex_fair_launch } from "../idl/libplex_fair_launch";
 import { Idl, Program, Provider } from "@coral-xyz/anchor";
 import * as buffer from "buffer";
