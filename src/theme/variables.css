@@ -189,10 +189,10 @@ ion-header {
 .flex.items-center.justify-center.w-full.h-full {
 padding: 12px !important;
 border-radius: 0px !important; 
-max-width: 500px !important;
 border: 4px solid #2cec00 !important;
 justify-content: center !important;
 display: flex !important;
+max-width: 500px !important;
 }
 #jupiter-terminal .bg-\[\#191B1F\] {
   --tw-bg-opacity: 1;
