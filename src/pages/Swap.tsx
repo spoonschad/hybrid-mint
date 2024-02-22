@@ -169,17 +169,7 @@ window.addEventListener('pageshow', setupObserver);
     },[])
     return (
       <IonPage>
-        <div className="div-block-69">
-          <div className="div-block-80">
-            <img src="warning.svg" alt="" className="image-33"/>
-            <a href="https://leh.gg" className="link-7" style={{fontSize: '10px'}}>Always make sure the url is &#x27;<span className="text-span-4" style={{color: 'white', fontWeight: 'bold'}}>leh.gg&#x27;</span> bookmark it to be safe</a>
-          </div>
-          <div className="div-block-83">
-            <a href="" className="w-inline-block" style={{textDecoration: 'none', display: 'flex', alignItems: 'center'}}>
-              <img src="/s.png" alt="" className="image-34"/><span style={{fontWeight: 'bold', textDecoration: 'none', color: 'white', fontSize: '1.35rem'}}>Vault \ Swap</span></a>
 
-          </div>
-        </div>
         <IonContent style={{
   display: 'flex',
   justifyContent: 'center', // Centers children along the main axis (horizontally for row, vertically for column)
@@ -189,15 +179,6 @@ window.addEventListener('pageshow', setupObserver);
 }}> 
 
         <div id="integrated-terminal" style={{width: '100%', marginTop: '15vh', maxWidth: '100%', padding: '2%', paddingBottom: '24px'}}>
-
-         </div>
-         <div style={{display: 'flex', justifyContent: 'center', width: '100%',marginTop: 0 }}>
-            <a href="https://t.me/lehmanbroscoin" className="w-inline-block" style={{color: 'white', textDecoration: 'none', fontWeight: 'medium'}}> 
-              Telegram</a>
-              <a href="https:/x.com/lehvault" className="w-inline-block" style={{color: 'white', textDecoration: 'none', fontWeight: 'medium', marginLeft: 24}}> 
-              Twitter</a>
-            </div>
-         <div style={{display: 'flex', justifyContent: 'center', width: '100%',marginTop: 12 }}><a href="https://solscan.io/account/HdHj4J6c6Q6j3ukfRa1nrtsAZCcekFXRZmLt9pWivf66" style={{color: 'white', textDecoration: 'none', fontWeight: 'bold', fontSize: '.875rem'}}>LEH Treasury</a>
          </div>
          <div> 
          </div>

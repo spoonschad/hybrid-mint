@@ -94,7 +94,7 @@ html {
   --ion-dynamic-font: var(--ion-default-dynamic-font);
 }
 body {
---ion-background-color: #2eda07;
+--ion-background-color: #000000;
 }
 
 ion-toolbar,
@@ -129,7 +129,7 @@ ion-header {
   width: 100vw;
   height: 24px;
   z-index: 999;
-  background-color: #068500;
+  background-color: #000000;
   align-items: center;
   justify-content: center;
   padding-left: 11px;
@@ -172,7 +172,9 @@ ion-header {
 }
 #jupiter-terminal .bg-\[\#212128\] {
   --tw-bg-opacity: 1;
-  background-color: #28d800 !important; /* Set background color to white */
+  background-color: #070707 !important; /* Set background color to white */
+  border-radius: 24px !important;
+  border: 1px solid #ffffff05 !important;
 }
 
 .input { 
@@ -189,7 +191,7 @@ ion-header {
 .flex.items-center.justify-center.w-full.h-full {
 padding: 12px !important;
 border-radius: 0px !important; 
-border: 4px solid #2eda07 !important;
+border: 4px solid #000000 !important;
 justify-content: center !important;
 display: flex !important;
 max-width: 500px !important;
@@ -208,11 +210,11 @@ max-width: 500px !important;
   color: #FFFFFF !important;
 }
 #jupiter-terminal .bg-\[\#36373E\] {
-  background-color:  #2cec00 !important;
+  background-color:  #0d0d0d !important;
   }
   #jupiter-terminal .bg-jupiter-bg {
     --tw-bg-opacity: 1;
-    background-color: rgb(44, 236, 0) !important;
+    background-color: rgb(22, 22, 22) !important;
 }
 #jupiter-terminal .bg-\[\#2C2D33\] {
   --tw-bg-opacity: 1;
@@ -220,9 +222,9 @@ max-width: 500px !important;
 }
 
 #jupiter-terminal .h-full.flex.flex-col.items-center.justify-center.pb-4 {
-  background-color: #FFFFFF20 !important;
+  background-color: #070707 !important;
   border-radius: 32px !important; 
-  border: 4px solid #FFFFFF20 !important
+  border: 4px solid #55555520 !important
 
 
 }
@@ -235,17 +237,17 @@ max-width: 500px !important;
   font-size: 1.5rem !important;
 }
 #jupiter-terminal .rounded-xl {
-  border-radius: 22px !important; 
+  border-radius: 16px !important; 
 
 }
 
 #jupiter-terminal .border {
-  border: 1px solid rgb(59, 215, 24) !important; 
+  border: 1px solid rgb(21, 21, 21) !important; 
 
 }
 
 #jupiter-terminal .bg-\[\#191B1F\] {
-  background-color: rgb(45, 209, 0) !important;
+  background-color: rgb(14, 14, 14) !important;
 
 }
 
@@ -262,12 +264,12 @@ max-width: 500px !important;
 }
 
 .css-1pt1vl2 {
-  background-color: rgb(45, 209, 0) !important;
+  background-color: rgb(2, 2, 2) !important;
   border-radius: 24px !important;
 }
 
 #jupiter-terminal .bg-\[\#292A33\] {
-  background-color: rgb(29, 133, 0) !important;
+  background-color: rgb(11, 11, 11) !important;
   border-radius: 24px !important;
 
 }
@@ -278,18 +280,18 @@ max-width: 500px !important;
 }
 
 #jupiter-terminal .bg-\[\#1B1B1E\] {
- background-color: #28d800 !important;
+ background-color: #0b0b0b !important;
 }
 
 #jupiter-terminal .bg-transparent :before {
-  background-color: #28d800
+  background-color: #0b0b0b
   !important;
 }
 
 #jupiter-terminal .v2-border-gradient:before {
-  border: 3px solid  #1dff12;
+  border: 3px solid  #000000;
   border-radius: 18px !important;
-  background: linear-gradient(91.26deg, #28d800 15.73% ,#28d800 83.27%) !important;
+  background: linear-gradient(91.26deg, #0b0b0b 15.73% ,#0b0b0b 83.27%) !important;
 }
 
 .h-full.w-full.leading-none.flex.justify-center.items-center {
